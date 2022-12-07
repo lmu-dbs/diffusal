@@ -375,44 +375,6 @@ def load_dataset(data_root: str,
                            transform=None,
                            pre_transform=None,
                            )
-    elif dataset_name in ['Computers', 'Photo']:
-        dataset = Amazon(root=data_root,
-                         name=dataset_name,
-                         transform=None,
-                         pre_transform=None,
-                         )
-    elif dataset_name in ['CoraFull', 'Cora_ML', 'CiteSeerFull', 'DBLP', 'PubMedFull']:
-        data_root = os.path.join(data_root, 'citation_full')
-        if dataset_name.endswith('Full'):
-            dataset_name = dataset_name.replace('Full', '')
-        dataset = CitationFull(root=data_root,
-                               name=dataset_name,
-                               transform=None,
-                               pre_transform=None,
-                               )
-    elif dataset_name in ['Cornell', 'Texas', 'Wisconsin']:
-        dataset = WebKB(root=data_root,
-                        name=dataset_name,
-                        transform=None,
-                        pre_transform=None,
-                        )
-    elif dataset_name in ['Chameleon', 'Squirrel']:
-        dataset = WikipediaNetwork(root=data_root,
-                                   name=dataset_name,
-                                   transform=None,
-                                   pre_transform=None,
-                                   )
-    elif dataset_name in ['Actor']:
-        dataset = Actor(root=os.path.join(data_root, dataset_name),
-                        transform=None,
-                        pre_transform=None,
-                        )
-    elif dataset_name in ['Brazil', 'Europe', 'USA']:
-        dataset = Airlines(root=data_root,
-                           name=dataset_name,
-                           transform=None,
-                           pre_transform=None,
-                           )
     else:
         raise ValueError(f'Unknown dataset: {dataset_name}')
 

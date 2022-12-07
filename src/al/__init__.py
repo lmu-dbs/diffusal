@@ -1,8 +1,7 @@
 from typing import Type
 
 from .random import RandomSampling
-from .diff_based.importance import ImportanceSampling
-from .diff_based.diffusal import DiffusALFinal
+from .diff_based.diffusal import DiffusAL
 from .diff_based.diffusal_ablations import DiffusALNoDiv, DiffusALNoImp, DiffusALNoUnc
 from .entropy import EntropySampling
 from .degree import DegreeSampling
@@ -26,8 +25,6 @@ def get_strategy_class(name: str) -> Type:
         return FeatProp
     elif name == 'grain':
         return GRAIN
-    elif name == 'importance':
-        return ImportanceSampling
     elif name == 'diffusal':
         return DiffusAL
     elif name == 'diff_nodiv':

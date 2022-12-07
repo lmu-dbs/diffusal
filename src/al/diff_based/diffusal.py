@@ -8,7 +8,7 @@ from al.activelearner import SelectionType
 from utilities.data_utils import DataWrapper
 
 
-class DiffusALFinal(DiffusionStrategy):
+class DiffusAL(DiffusionStrategy):
     selection_type: SelectionType = SelectionType.ITERATIVE_SEQ
 
     def __init__(self, datawrapper: DataWrapper, model_params, clf='mlp', **kwargs):
