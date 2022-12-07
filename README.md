@@ -6,12 +6,12 @@ Diffusion-based Active Learning for Semi-Supervised Node Classification
 ``` python
 python3 -m venv ./diffusal
 source ./diffusal/bin/activate
-pip install -U pip setuptools wheel
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.12.0+cu113.html
-pip install torch-sparse -f https://data.pyg.org/whl/torch-1.12.0+cu113.html
-pip install torch-geometric
-pip install -r requirements.txt
+(diffusal) pip install -U pip setuptools wheel
+(diffusal) pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+(diffusal) pip install torch-scatter -f https://data.pyg.org/whl/torch-1.12.0+cu113.html
+(diffusal) pip install torch-sparse -f https://data.pyg.org/whl/torch-1.12.0+cu113.html
+(diffusal) pip install torch-geometric
+(diffusal) pip install -r requirements.txt
 ```
 
 ## run experiments
