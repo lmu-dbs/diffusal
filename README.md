@@ -1,5 +1,6 @@
 # DiffusAL
-Diffusion-based Active Learning for Semi-Supervised Node Classification
+Code for our Paper "DiffusAL: Coupling Active Learning with Graph Diffusion for Label-Efficient Node Classification"
+accepted at ECML PKDD '23
 
 # Getting Started
 ## install dependencies
